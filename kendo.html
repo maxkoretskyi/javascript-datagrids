@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Kendo UI</title>
+
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2019.2.514/styles/kendo.common.min.css"/>
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2019.2.514/styles/kendo.blueopal.min.css"/>
+
+    <script src="http://kendo.cdn.telerik.com/2019.2.514/js/jquery.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2019.2.514/js/kendo.all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#grid').kendoGrid({
+                columns: [
+                    {
+                        field: 'FirstName',
+                        title: 'First Name'
+                    },
+                    {
+                        field: 'LastName',
+                        title: 'Last Name'
+                    }
+                ],
+                dataSource: {
+                    data: [
+                        {
+                            FirstName: 'Joe',
+                            LastName: 'Smith'
+                        },
+                        {
+                            FirstName: 'Jane',
+                            LastName: 'Smith'
+                        }
+                    ]
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<h2><a href="https://www.telerik.com/kendo-angular-ui/components/grid/" target="_blank">Docs</a></h2>
+<div id="grid"></div>
+</body>
+</html>
